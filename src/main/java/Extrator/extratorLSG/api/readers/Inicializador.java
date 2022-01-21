@@ -20,7 +20,7 @@ public class Inicializador {
     public static String userdb;
     public static String passdb;
 
-    private static Connection c;
+    public static Connection c;
 
     public static void init() throws ClassNotFoundException, SQLException {
         Properties prop = new Properties();

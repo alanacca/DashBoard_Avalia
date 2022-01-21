@@ -4,6 +4,8 @@ import Extrator.extratorLSG.api.model.*;
 
 import java.util.HashSet;
 
+import static Extrator.extratorLSG.api.readers.Inicializador.c;
+
 public class Parsing {
     public static void parseOneLattes(String identificador, String arquivo, HashSet<String> setores)  {
 
@@ -11,14 +13,6 @@ public class Parsing {
 
         extratorLSG imp = new extratorLSG(identificador);
         imp.fazerParsing(arquivo);
-
-        //se o curriculo nÃ£o teve atualizaÃ§Ãµes
-        /*
-        if (!imp.cur.checkUpdate(c)) {
-            System.out.print("up-to-date - Finalizado\n");
-            return;
-        }
-        */
 
         try {
             imp.cur.persist(c);
