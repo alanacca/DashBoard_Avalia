@@ -1,12 +1,16 @@
 package Extrator.extratorLSG.api.model;
 
 import Extrator.extratorLSG.api.utils.Utils;
+import lombok.Data;
 
+import javax.persistence.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+@Data
+@Entity
 public class Artigo {
     public String SEQUENCIA_PRODUCAO;
     public String TITULO_DO_ARTIGO;  //dados bÃ¡sicos
