@@ -1,17 +1,13 @@
 package Extrator.extratorLSG.api.model;
 
 import Extrator.extratorLSG.api.utils.Utils;
-import lombok.Data;
 
-import javax.persistence.Entity;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-@Data
-@Entity
 public class Projeto {
     public String SEQUENCIA_PROJETO;
     public String ANO_INICIO;

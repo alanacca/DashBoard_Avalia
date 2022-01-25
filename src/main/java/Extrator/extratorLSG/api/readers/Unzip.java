@@ -1,5 +1,7 @@
 package Extrator.extratorLSG.api.readers;
 
+import lombok.Data;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,6 +10,7 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
+@Data
 public class Unzip {
     List<String> fileList;
 

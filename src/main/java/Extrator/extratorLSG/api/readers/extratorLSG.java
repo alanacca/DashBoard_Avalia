@@ -11,6 +11,7 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
 public class extratorLSG extends DefaultHandler {
     private String tagAtual;
     public Curriculo cur;

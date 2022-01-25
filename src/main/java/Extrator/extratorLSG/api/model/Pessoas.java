@@ -1,5 +1,6 @@
 package Extrator.extratorLSG.api.model;
 
+import Extrator.extratorLSG.api.Request.PessoasRequest;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -28,5 +29,11 @@ public class Pessoas {
 
     public Pessoas(Integer id){
         this.idPessoa = id;
+    }
+
+    public Pessoas(PessoasRequest request){
+        this.nome = request.nome;
+        this.idPlataforma = request.idPlataforma;
+        this.Platraforma = request.Plataforma;
     }
 }

@@ -1,11 +1,12 @@
 package Extrator.extratorLSG.api.readers;
 
 import Extrator.extratorLSG.api.model.*;
+import lombok.Data;
 
 import java.util.HashSet;
 
 import static Extrator.extratorLSG.api.readers.Inicializador.c;
-
+@Data
 public class Parsing {
     public static void parseOneLattes(String identificador, String arquivo, HashSet<String> setores)  {
 

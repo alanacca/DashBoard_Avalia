@@ -1,5 +1,8 @@
 package Extrator.extratorLSG.api.utils;
 
+import lombok.Data;
+
+@Data
 public class Utils {
     public static String dateFormat(String data) {
         if (data == null) return null;
