@@ -1,12 +1,16 @@
 package Extrator.extratorLSG.api.model;
 
 import Extrator.extratorLSG.api.utils.Utils;
+import lombok.Data;
 
+import javax.persistence.Entity;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+@Data
+@Entity
 public class Formacao {
     public String tipo_formacao;
     public String titulo_trabalho;

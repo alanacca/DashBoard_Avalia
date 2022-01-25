@@ -1,12 +1,16 @@
 package Extrator.extratorLSG.api.model;
 
 import Extrator.extratorLSG.api.utils.Utils;
+import lombok.Data;
 
+import javax.persistence.Entity;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+@Data
+@Entity
 public class Curriculo {
     public String NUMERO_IDENTIFICADOR;
     public String DATA_ATUALIZACAO;
